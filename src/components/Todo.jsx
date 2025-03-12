@@ -3,20 +3,7 @@ import "../style_todos.css"
 
 
 const Todo = () => {
-    const defaultTodos = [
-        {
-            text: "Learn React",
-            id: 1
-        },
-        {
-            text: "Learn Firebase",
-            id: 2
-        },
-        {
-            text: "Learn GraphQL",
-            id: 3
-        }
-    ]
+    
     
     const [todos , setTodos]= useState([])
     const[input , setInput]= useState("")
