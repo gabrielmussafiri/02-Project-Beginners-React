@@ -7,9 +7,9 @@ const ToggleBackgroundColor = () => {
   const [buttonStyle, setButtonStyle] = useState("white");
 
   const handleClick = () => {
-    setBackgroundColor(backgroundColor === "white" ? "#1b1b1b" : "white");
-    setTextColor(textColor === "#1b1b1b" ? "#ffa31a" : "#1b1b1b");
-    setButtonStyle(backgroundColor === "white" ? "#1b1b1b" : "white");
+    setBackgroundColor((prev) => (prev === "white" ? "#1b1b1b" : "white"));
+    setTextColor((prev) => (prev === "#1b1b1b" ? "#ffa31a" : "#1b1b1b"));
+    setButtonStyle((prev) => (prev === "white" ? "#1b1b1b" : "white"));
   };
 
   return (
